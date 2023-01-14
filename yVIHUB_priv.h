@@ -28,7 +28,7 @@
 
 #define     P_SYSTEM    "gnu/linux   (powerful, ubiquitous, technical, and hackable)"
 #define     P_LANGUAGE  "ansi-c      (wicked, limitless, universal, and everlasting)"
-#define     P_CODESIZE  "large       (appoximately 10,000 slocl)"
+#define     P_CODESIZE  "small       (less than 1,000 slocl)"
 #define     P_DEPENDS   "none"
 
 #define     P_AUTHOR    "heatherlyrobert"
@@ -36,8 +36,8 @@
 
 #define     P_VERMAJOR  "0.--, start to untangle yvikeys libraries"
 #define     P_VERMINOR  "0.1-, start with yKEYS and yMODE"
-#define     P_VERNUM    "0.1a"
-#define     P_VERTXT    "bring code over from yMODE and yKEYS"
+#define     P_VERNUM    "0.1b"
+#define     P_VERTXT    "updated ySRC with text register push function"
 
 #define     P_PRIORITY  "direct, simple, brief, vigorous, and lucid (h.w. fowler)"
 #define     P_PRINCIPAL "[grow a set] and build your wings on the way down (r. bradbury)"
@@ -53,6 +53,10 @@
 #include    <yLOG.h>              /* heatherly program logging                */
 #include    <ySTR.h>              /* heatherly string processing              */
 
+
+
+
+char     yvihub_stub          ();
 
 
 
