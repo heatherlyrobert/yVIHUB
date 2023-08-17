@@ -4,9 +4,9 @@
 #include    "yVIHUB_priv.h"
 
 
-static char     (*s_yview_keys)       (uchar*)                         = yvihub_stub;
-static char     (*s_yview_modes)      (uchar*)                         = yvihub_stub;
-static char     (*s_yview_switch_add) (char,char*,char*,void*,char*)   = yvihub_stub;
+static char     (*s_yview_keys)       (uchar*)                         = NULL;
+static char     (*s_yview_modes)      (uchar*)                         = NULL;
+static char     (*s_yview_switch_add) (char,char*,char*,void*,char*)   = NULL;
 
 char
 yVIHUB_from_yVIEW        (void *f_keys, void *f_modes, void *f_switch_add)

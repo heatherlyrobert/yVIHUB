@@ -5,8 +5,8 @@
 
 
 
-static char     (*s_ycmd_direct)      (uchar*)                                   = yvihub_stub;
-static char     (*s_ycmd_add)         (uchar,uchar*,uchar*,uchar*,void*,uchar*)  = yvihub_stub;
+static char     (*s_ycmd_direct)      (uchar*)                                   = NULL;
+static char     (*s_ycmd_add)         (uchar,uchar*,uchar*,uchar*,void*,uchar*)  = NULL;
 
 char
 yVIHUB_from_yCMD          (void *f_direct, void *f_add)

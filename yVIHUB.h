@@ -10,6 +10,15 @@ typedef  unsigned char        uchar;
 typedef  unsigned short       ushort;
 
 
+
+
+/*===[[ yVIHUB_init.c ]]======================================================*/
+/*··········´·······················´····´····································*/
+char        yVIHUB_init             (char a_env, char *a_title, char *a_version, char a_mode, void *f_cleanse, void *f_prep, void *f_cursor, void *f_refresh);
+/*---(done)-----------------*/
+
+
+
 /*===[[ yVIHUB_ymode.c ]]=====================================================*/
 /*··········´·······················´····´····································*/
 /*---(configure)------------*/
@@ -97,12 +106,13 @@ char        yVIHUB_yMAP_move_hmode       (uchar a_major, uchar a_minor);
 /*===[[ yVIHUB_ysrc.c ]]======================================================*/
 /*··········´·······················´····´····································*/
 /*---(configure)------------*/
-char        yVIHUB_from_ySRC             (void *f_sel_live, void *f_start, void *f_size, void *f_push);
+char        yVIHUB_from_ySRC             (void *f_sel_live, void *f_start, void *f_size, void *f_push, void *f_swap);
 /*---(use)------------------*/
 char        yVIHUB_ySRC_select_islive    (void);
 char        yVIHUB_ySRC_start            (char *a_prefix);
 char        yVIHUB_ySRC_size             (short a_formula, short a_command);
 char        yVIHUB_ySRC_push             (uchar a_sreg, char *a_data);
+char        yVIHUB_ySRC_swap             (char *a_new);
 /*---(done)-----------------*/
 
 

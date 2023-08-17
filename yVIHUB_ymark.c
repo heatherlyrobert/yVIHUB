@@ -5,8 +5,8 @@
 
 
 
-static char     (*s_ymark_hmode)      (uchar, uchar)                   = yvihub_stub;
-static char     (*s_ymark_execute)    (uchar*)                         = yvihub_stub;
+static char     (*s_ymark_hmode)      (uchar, uchar)                   = NULL;
+static char     (*s_ymark_execute)    (uchar*)                         = NULL;
 
 char
 yVIHUB_from_yMARK        (void *f_hmode, void *f_execute)

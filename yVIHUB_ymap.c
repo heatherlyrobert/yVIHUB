@@ -5,17 +5,17 @@
 
 
 
-static char     (*s_ymap_refresh)     (void)                           = yvihub_stub;
-static char     (*s_ymap_refresh_disp)(void)                           = yvihub_stub;
-static char     (*s_ymap_refresh_full)(void)                           = yvihub_stub;
-static char     (*s_ymap_visu_live)   (void)                           = yvihub_stub;
-static char     (*s_ymap_range)       (char*, char*)                   = yvihub_stub;
-static char     (*s_ymap_jump)        (short,short,short,short)        = yvihub_stub;
-static char     (*s_ymap_beg)         (char*,ushort*,ushort*,ushort*,ushort*) = yvihub_stub;
-static char     (*s_ymap_current)     (char*,ushort*,ushort*,ushort*,ushort*) = yvihub_stub;
-static char     (*s_ymap_locator)     (char*,ushort*,ushort*,ushort*,ushort*) = yvihub_stub;
-static char     (*s_ymap_addresser)   (char*,ushort,ushort,ushort,ushort)     = yvihub_stub;
-static char     (*s_ymap_move_hmode)  (uchar,uchar)                    = yvihub_stub;
+static char     (*s_ymap_refresh)     (void)                           = NULL;
+static char     (*s_ymap_refresh_disp)(void)                           = NULL;
+static char     (*s_ymap_refresh_full)(void)                           = NULL;
+static char     (*s_ymap_visu_live)   (void)                           = NULL;
+static char     (*s_ymap_range)       (char*, char*)                   = NULL;
+static char     (*s_ymap_jump)        (short,short,short,short)        = NULL;
+static char     (*s_ymap_beg)         (char*,ushort*,ushort*,ushort*,ushort*) = NULL;
+static char     (*s_ymap_current)     (char*,ushort*,ushort*,ushort*,ushort*) = NULL;
+static char     (*s_ymap_locator)     (char*,ushort*,ushort*,ushort*,ushort*) = NULL;
+static char     (*s_ymap_addresser)   (char*,ushort,ushort,ushort,ushort)     = NULL;
+static char     (*s_ymap_move_hmode)  (uchar,uchar)                    = NULL;
 
 char
 yVIHUB_from_yMAP         (void *f_refresh, void *f_refresh_disp, void *f_refresh_full, void *f_visu_live, void *f_range, void *f_jump, void *f_beg, void *f_current, void *f_locator, void *f_addresser, void *f_move_hmode)

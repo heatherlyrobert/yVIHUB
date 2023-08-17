@@ -4,7 +4,7 @@
 #include    "yVIHUB_priv.h"
 
 
-static char     (*s_ymode_yvihub)     (char)                           = yvihub_stub;
+static char     (*s_ymode_yvihub)     (char)                           = NULL;
 
 
 char

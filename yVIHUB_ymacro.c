@@ -26,7 +26,7 @@ static char     (*s_ymacro_rec_key)   (uchar, uchar)                   = NULL;
 static char     (*s_ymacro_exe)       (uchar)                          = NULL;
 static char     (*s_ymacro_exe_mode)  (void)                           = yvihub_ymacro_stub;
 static char     (*s_ymacro_exe_pos)   (char*, short *)                 = NULL;
-static char     (*s_ymacro_exe_cur)   (uchar*, short*, short *, uchar*, uchar*)  = yvihub_stub;
+static char     (*s_ymacro_exe_cur)   (uchar*, short*, short *, uchar*, uchar*)  = NULL;
 static char     (*s_ymacro_exe_repos) (int)                            = NULL;
 static char     (*s_ymacro_agrios)    (uchar, uchar)                   = NULL;
 

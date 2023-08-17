@@ -5,7 +5,7 @@
 
 
 
-static char     (*s_yfile_dump_add)     (char *a_name, char *a_terse, char *a_desc, void *a_provider) = yvihub_stub;
+static char     (*s_yfile_dump_add)     (char *a_name, char *a_terse, char *a_desc, void *a_provider) = NULL;
 
 char
 yVIHUB_from_yFILE         (void *f_dump_add)

@@ -14,13 +14,13 @@
 char     yvihub_stub () { return 0; }
 
 
-static char     (*s_ykeys_init)      (void)                           = yvihub_stub;
-static char     (*s_ykeys_quit)      (void)                           = yvihub_stub;
-static char     (*s_ykeys_warning)   (void)                           = yvihub_stub;
-static char     (*s_ykeys_check_rpt) (void)                           = yvihub_stub;
-static char     (*s_ykeys_rpt_umode) (uchar, uchar)                   = yvihub_stub;
-static char     (*s_ykeys_grp_hmode) (uchar, uchar)                   = yvihub_stub;
-static char     (*s_ykeys_rpt_check) (uchar, uchar, char, char, char) = yvihub_stub;
+static char     (*s_ykeys_init)      (void)                           = NULL;
+static char     (*s_ykeys_quit)      (void)                           = NULL;
+static char     (*s_ykeys_warning)   (void)                           = NULL;
+static char     (*s_ykeys_check_rpt) (void)                           = NULL;
+static char     (*s_ykeys_rpt_umode) (uchar, uchar)                   = NULL;
+static char     (*s_ykeys_grp_hmode) (uchar, uchar)                   = NULL;
+static char     (*s_ykeys_rpt_check) (uchar, uchar, char, char, char) = NULL;
 
 char
 yVIHUB_from_yKEYS       (void *f_init, void *f_quit, void *f_warning, void *f_check_rpt, void *f_repeat_umode, void *f_group_hmode, void *f_rpt_check)
