@@ -65,6 +65,7 @@ char        yVIHUB_yMACRO_agrios         (uchar a_major, uchar a_minor);
 #define     IF_MACRO_PLAYING     if (yVIHUB_yMACRO_exe_mode ("playing")  == 1)
 #define     IF_MACRO_NOT_PLAYING if (yVIHUB_yMACRO_exe_mode ("notplay")  == 1)
 #define     IF_MACRO_RECORDING   if (yVIHUB_yMACRO_rec_mode ("record")   == 'r')
+#define     IF_MACRO_ANYTHING    if (yVIHUB_yMACRO_exe_mode ("stop")     != 1 || yVIHUB_yMACRO_rec_mode ("record")  == 'r')
 /*---(unittest)-------------*/
 char        yVIHUB_unit_macro_mode       (char a_mode);
 /*---(done)-----------------*/
@@ -74,11 +75,13 @@ char        yVIHUB_unit_macro_mode       (char a_mode);
 /*===[[ yVIHUB_yview.c ]]=====================================================*/
 /*··········´·······················´····´····································*/
 /*---(configure)------------*/
-char        yVIHUB_from_yVIEW            (void *f_keys, void *f_modes, void *f_switch_add);
+char        yVIHUB_from_yVIEW            (void *f_keys, void *f_modes, void *f_switch_add, void *f_history, void *f_direct);
 /*---(use)------------------*/
 char        yVIHUB_yVIEW_keys            (char *a_text);
 char        yVIHUB_yVIEW_modes           (char *a_text);
 char        yVIHUB_yVIEW_switch_add      (char a_part, char *a_opt, char *a_terse, void *a_source, char *a_desc);
+char        yVIHUB_yVIEW_history         (char a_mode, char *a_text);
+char        yVIHUB_yVIEW_direct          (char *b_text);
 /*---(done)-----------------*/
 
 

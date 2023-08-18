@@ -36,8 +36,8 @@
 
 #define     P_VERMAJOR  "0.--, start to untangle yvikeys libraries"
 #define     P_VERMINOR  "0.1-, start with yKEYS and yMODE"
-#define     P_VERNUM    "0.1c"
-#define     P_VERTXT    "added connection to ysrc_swap for yVIEW_hist"
+#define     P_VERNUM    "0.1d"
+#define     P_VERTXT    "command history is working again, needs more work"
 
 #define     P_PRIORITY  "direct, simple, brief, vigorous, and lucid (h.w. fowler)"
 #define     P_PRINCIPAL "[grow a set] and build your wings on the way down (r. bradbury)"
