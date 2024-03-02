@@ -50,7 +50,7 @@
 /*===[[ yMACRO ]]=============================================================*/
 /*---(speeds)----------*/
 #define     MACRO_BLITZ        '0'
-#define     MACRO_FAST         '1'
+#define     MACRO_BLUR         '1'
 #define     MACRO_THOU         '2'
 #define     MACRO_HUND         '3'
 #define     MACRO_TWENTY       '4'
@@ -59,6 +59,7 @@
 #define     MACRO_SEC          '7'
 #define     MACRO_DOUBLE       '8'
 #define     MACRO_TRIPLE       '9'
+#define     MACRO_DELAYS       "0123456789"
 /*---(updates)---------*/
 #define     MACRO_FAST         'f'  /* fast   updates */
 #define     MACRO_NORMAL       'n'  /* normal updates */
@@ -66,6 +67,7 @@
 #define     MACRO_BLINKS       'b'  /* stop action looking */
 #define     MACRO_PEEKS        'p'  /* very slow screen updates */
 #define     MACRO_BLIND        'd'  /* no screen updates */
+#define     MACRO_UPDATES      "fnsbpd"
 /*---(mode)------------*/
 #define     MACRO_STOP         '-'      /* normal keyboard input              */
 #define     MACRO_RUN          'M'      /* macro running with redisplay       */
