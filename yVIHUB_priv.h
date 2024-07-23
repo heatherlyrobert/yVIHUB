@@ -36,8 +36,8 @@
 
 #define     P_VERMAJOR  "0.--, start to untangle yvikeys libraries"
 #define     P_VERMINOR  "0.1-, start with yKEYS and yMODE"
-#define     P_VERNUM    "0.1e"
-#define     P_VERTXT    "added a couple #define's to solo for yMACRO"
+#define     P_VERNUM    "0.1f"
+#define     P_VERTXT    "update for new DEBUG_ macro calls"
 
 #define     P_PRIORITY  "direct, simple, brief, vigorous, and lucid (h.w. fowler)"
 #define     P_PRINCIPAL "[grow a set] and build your wings on the way down (r. bradbury)"
